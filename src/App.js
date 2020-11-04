@@ -43,11 +43,18 @@ function App() {
   }, []);
 
   const todoList = todoItems.map((todoItem) => {
-    return <TodoItem key={todoItem.id} todoItem={todoItem} />;
+    return (
+      <TodoItem
+        key={todoItem.id}
+        todoItem={todoItem}
+        getTodoItems={getTodoItems}
+      />
+    );
   });
   return (
     <div className="App">
       <TodoModal
+        getTodoItems={getTodoItems}
         handleNewTodo={handleNewTodo}
         handleModalClose={handleModalClose}
         modalIsOpen={modalOpen}
