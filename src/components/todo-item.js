@@ -8,7 +8,7 @@ const TodoItem = (props) => {
     <div className="todo-item-wrapper">
       <input type="checkbox" />
       <h4>{title}</h4>
-      <FontAwesomeIcon icon="trash" />
+      <FontAwesomeIcon className="trash-icon" icon="trash" />
     </div>
   );
 };

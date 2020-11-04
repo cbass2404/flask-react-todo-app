@@ -53,13 +53,16 @@ function App() {
         handleModalClose={handleModalClose}
         modalIsOpen={modalOpen}
       />
-      <div className="add-item-button">
-        <button onClick={() => handleNewTodoClick()}>
-          <span>+</span>
-        </button>
-      </div>
-      <div className="todo-list-wrapper">
-        {isLoading ? "Loading..." : todoList}
+      <h1>TODO</h1>
+      <div className="app-content">
+        <div className="add-item-button">
+          <button onClick={() => handleNewTodoClick()}>
+            <span>+</span>
+          </button>
+        </div>
+        <div className="todo-list-wrapper">
+          {isLoading ? "Loading..." : todoList}
+        </div>
       </div>
     </div>
   );

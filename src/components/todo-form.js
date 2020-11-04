@@ -10,7 +10,9 @@ const TodoForm = (props) => {
         title: `${title}`,
         done: false,
       })
-      .then((res) => {})
+      .then((res) => {
+        console.log(res.data);
+      })
       .catch((err) => {
         console.log("TodoForm handleSubmit", err);
       });
@@ -25,6 +27,7 @@ const TodoForm = (props) => {
         onChange={(e) => setTitle([e.target.value])}
         value={title}
         placeholder="New Item"
+        required
       />
       <button>Submit</button>
     </form>
