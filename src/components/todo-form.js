@@ -11,7 +11,7 @@ const TodoForm = (props) => {
         done: false,
       })
       .then((res) => {
-        console.log(res.data);
+        props.handleTodoSubmission(res.data);
       })
       .catch((err) => {
         console.log("TodoForm handleSubmit", err);

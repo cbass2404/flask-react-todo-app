@@ -15,7 +15,7 @@ function App() {
 
   const handleNewTodo = (todo) => {
     toggleModal(false);
-    addItems(todo.concat(todoItems));
+    addItems([todo].concat(todoItems));
   };
 
   const handleNewTodoClick = () => {
@@ -30,7 +30,6 @@ function App() {
     axios
       .get("http://localhost:5000/api/get-all-todos")
       .then((res) => {
-        console.log(res.data);
         addItems(res.data);
         loadingStatus(false);
       })
