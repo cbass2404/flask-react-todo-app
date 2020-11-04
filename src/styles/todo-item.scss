@@ -8,6 +8,11 @@
   grid-template-columns: 1fr 14fr 1fr;
   grid-gap: 21px;
 
+  .done-todo-item {
+    color: darkred;
+    text-decoration: line-through;
+  }
+
   input {
     margin-left: 15px;
     border-radius: 0px;

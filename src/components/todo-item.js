@@ -1,5 +1,4 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Axios from "axios";
 import React, { useState } from "react";
 import axios from "axios";
 
@@ -34,7 +33,7 @@ const TodoItem = (props) => {
   return (
     <div className="todo-item-wrapper">
       <input onChange={handleChange} type="checkbox" checked={isDone} />
-      <h4>{title}</h4>
+      <h4 className={isDone ? "done-todo-item" : null}>{title}</h4>
       <FontAwesomeIcon
         onClick={handleDelete}
         className="trash-icon"
