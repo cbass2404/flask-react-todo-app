@@ -2,7 +2,9 @@
   background-color: transparent;
   border-radius: 0px 15px 15px 0px;
   display: grid;
-  grid-template-columns: 1fr 15fr;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-columns: 1fr 14fr 1fr;
   grid-gap: 21px;
 
   button {

@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 const TodoItem = (props) => {
@@ -5,8 +6,9 @@ const TodoItem = (props) => {
 
   return (
     <div className="todo-item-wrapper">
-      <button>Done</button>
+      <input type="checkbox" />
       <h4>{title}</h4>
+      <FontAwesomeIcon icon="trash" />
     </div>
   );
 };

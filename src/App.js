@@ -4,7 +4,11 @@ import axios from "axios";
 import TodoModal from "./components/todo-modal";
 import TodoItem from "./components/todo-item";
 
+import Icons from "./components/icons";
+
 function App() {
+  Icons();
+
   const [todoItems, addItems] = useState([]);
   const [isLoading, loadingStatus] = useState(true);
   const [modalOpen, toggleModal] = useState(false);
